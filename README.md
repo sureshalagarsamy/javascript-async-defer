@@ -41,3 +41,7 @@ Scripts with the defer attribute are executed in order (i.e. first script 1, the
 Unlike async scripts, defer scripts are only executed after the entire document has been loaded.
 
 According to http://caniuse.com/#feat=script-defer, 90% of all browsers support this. 92% support it at least partially.
+
+### Conclusion
+
+The current state-of-the-art is to put scripts in the ```<head>``` tag and use the ```async``` or ```defer``` attributes. This allows your scripts to be downloaded asap without blocking your browser.
